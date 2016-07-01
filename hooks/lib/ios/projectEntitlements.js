@@ -116,6 +116,7 @@ Script only generates content. File it self is included in the xcode project in 
     pluginPreferences.hosts.forEach(function(host) {
       link = domainsListEntryForHost(host);
       domainsList.push(link);
+      domainsList.push('webcredentials:' + host.name);
     });
 
     return domainsList;
